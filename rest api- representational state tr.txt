@@ -1,0 +1,2 @@
+rest api- representational state transfer is the architectural design that is used for creating web services.Rest api is a way of accessing web services without having any processes.
+working- a request is sent from client to server in the form of a web urlas http get, post, put(updating the capabilities it is used to create a resource where the id is chosen by the client instead of server), patch(modify the capabilities this request only needs to contain the changes to the resource[not the complete resource]), delete,requset. after that a response comes back from the server 

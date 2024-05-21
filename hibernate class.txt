@@ -1,0 +1,19 @@
+standard service registry
+configuration is a class present in org.hibernate.cfg package.it activates hibernate framework,reads config files and mapping files 
+Configuration cfg=new Configuration();
+cfg.configure();
+
+session factory
+is an interface present in org.hibernate package and it is used to create session objects 
+SessionFactory sessionfactory=cfg.buildSessionFactory();
+
+Transaction
+transaction object is used whenver we perform an operationand based upon the operation there are some changes in the database 
+Session session =sessionfactory.buildSession();
+Transaction tx=session.beginTransaction();
+tx.commit();
+
+BootStrapping API
+BS it refers to the process of building and initializing a session factory   and for this purpose we need a service registry that holds the services needed by the hibernate.
+
+
